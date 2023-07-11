@@ -1,0 +1,16 @@
+:root {
+    background-color: rgb(26, 138, 138);
+}
+
+.titulo {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: yellow;
+}
+
+.imagenes {
+    margin: 4px;
+    border: 5px;
+    border-width: 8px;
+    border-color: white;
+    border-style: solid;
+}

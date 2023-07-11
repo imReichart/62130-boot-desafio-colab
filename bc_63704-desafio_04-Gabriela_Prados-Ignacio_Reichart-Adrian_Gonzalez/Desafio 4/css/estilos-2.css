@@ -1,0 +1,291 @@
+:root{
+    --verdeOscuroOscuro:#132A13;
+    --verdeOscuro:#31572C;
+    --verdeMedio:#4f772d;
+    --verdeClaro:#90a955;
+    --verdeClaroClaro:#ecf39e;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+}
+
+a{
+    text-decoration: none;
+}
+
+body{
+    background-color: var(--verdeOscuroOscuro);
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--verdeClaroClaro);
+}
+
+header{
+    width: 100%; 
+    height: 120px;
+    background-image: repeating-linear-gradient(
+        -45deg,
+        var(--verdeMedio) 0px,
+        var(--verdeMedio) 20px,
+        var(--verdeOscuro) 20px,
+        var(--verdeOscuro) 40px
+    );
+}
+
+h1{
+    height: 120px;
+    text-align: center;
+    line-height: 120px;
+    font-size: 80px;
+}
+
+h2{
+   text-align: center;
+
+}
+
+h3{
+    margin-bottom: 20px;
+    text-align: center;
+    background-color: var(--verdeOscuro);
+    padding: 20px;
+    border-radius: 10px;
+
+}
+
+main{
+    background-color: var(--background-main);
+    color: var(--color-text);
+    width: 80%;
+    margin: 20px auto;
+    padding: 10px;
+    max-width: 1200px;
+    border-radius: 10px;
+}
+
+section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    background-color: var(--verdeMedio);
+    margin: 20px auto;
+    border-radius: 10px;
+
+}
+
+section img{
+    width: 100%;
+    border-radius: 10px;
+
+}
+
+section div{
+    padding: 20px;
+    width: 500px;
+    margin: 20px auto;
+}
+
+.juegos2{
+    flex-direction: row-reverse;
+}
+
+section p{
+    margin: 10px 0px;
+    text-align: justify;
+}
+
+section a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    width: 150px;
+    text-align: center;
+    padding: 20px;
+    background-color: yellowgreen;
+    margin: 20px auto;
+    color: var(--verdeOscuroOscuro);
+}
+
+section a:hover{
+    box-shadow: 2px 2px 10px var(--verdeOscuroOscuro);
+    transform: translateY(-2px);
+
+}
+
+footer{
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    background-color: var(--verdeOscuro);
+    line-height: 100px;
+    
+}
+
+footer p{
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+/* ----------------------------------------------------MARIO Y MORTAL-------------------------------------------------------------------- */
+.headerJuegos{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.headerJuegos div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    max-width: 1200px;
+    padding: 0px 10px;
+    flex-wrap: wrap; 
+}
+
+.headerJuegos h1{
+    font-size: min(2vw + 1rem);
+    line-height: normal;
+    width: 51%;
+    height: auto;
+    text-align: left;
+}
+
+.headerJuegos a{
+    background-color: var(--verdeClaroClaro);
+    padding: 10px 25px;
+    border-radius: 5px;
+}
+
+.galery{
+    display: flex;
+    align-items: stretch;
+}
+
+.galery div{
+    padding: 0;
+    margin: 3px;
+    flex: 1;
+    overflow: hidden;
+}
+
+.galery img{
+    height: 100%;
+    object-fit: cover;
+    filter: grayscale();
+}
+
+.galery div:hover{
+    flex: 2;
+}
+
+.galery div img:hover{
+    filter: none;
+}
+
+.mainJuegos section:nth-child(2) p
+{
+    padding: 10px;
+}
+
+.mainJuegos section:nth-child(2){
+    height: auto;
+    display: grid;
+    grid-template-areas:
+      "imagen imagen"
+      "parrafo1 parrafo1"
+      "parrafo2 parrafo2"
+      "precio1 precio2";
+    grid-template-columns: 50% 50%;
+}
+
+.mainJuegos section:nth-child(2) img{
+    width: 100%;
+    grid-area: imagen;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.mainJuegos section:nth-child(2) .parrafo1{
+    grid-area: parrafo1;
+}
+
+.mainJuegos section:nth-child(2) .parrafo2{
+    grid-area: parrafo2;
+}
+
+.mainJuegos section:nth-child(2) .precio1{
+    grid-area: precio1;
+    width: 60%;
+    border: 2px solid var(--verdeClaroClaro);
+    padding: 0%;
+}
+
+.mainJuegos section:nth-child(2) .precio2{
+    grid-area: precio2;
+    width: 60%;
+    border: 2px solid var(--verdeClaroClaro);
+    padding: 0%;
+}
+
+.mainJuegos section:nth-child(2) .width{
+    width: 100%;
+}
+
+.mainJuegos section:nth-child(2) p{
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-weight: bolder;
+}
+
+.mainJuegos section:nth-child(2) div span{
+    display: block;
+    text-align: center;
+    height: 100px;
+    background-color: var(--verdeClaroClaro);
+    color: var(--verdeOscuro);
+    line-height: 100px;
+    font-size: 1.5rem;
+    
+}
+
+/* animacion */
+
+@keyframes sacudir {
+    0%{
+        transform: translateX(-3px);
+    }
+    25%{
+        transform: translateX(3px);
+    }
+    50%{
+        transform: translateX(-3px);
+    }
+    100%{
+        transform: translateX(px);
+    }
+}
+
+.headerJuegos a:hover{
+    animation: sacudir .5s;
+}
+
+/* --------------------------------------Media----------------------------------- */
+
+@media (max-width:890px) {
+    .mainJuegos section:nth-child(2){
+        grid-template-areas:
+          "imagen"
+          "parrafo1"
+          "parrafo2"
+          "precio1"
+          "precio2";
+        grid-template-columns: 1fr;
+    }
+}

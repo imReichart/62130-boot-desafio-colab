@@ -1,0 +1,138 @@
+@import url(https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Contrail+One&family=Vujahday+Script&display=swap%27);
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+:root{
+    --marronPastel: rgb(141, 123, 104);
+    --marronClaro: rgb(164, 144, 124);
+    --marronClarito: rgb(200, 182, 166);
+    --marronClarisimo: rgb(241, 222, 201);
+    --celesete: rgb(87, 155, 177);
+    --beige: rgb(225, 215, 198);
+    --deminegro: #3f3c3c;
+}
+
+body{
+    background-image: url(/img/gimnasio-retro.jpg);
+    background-repeat: repeat;
+    background-color: black;
+    width: 70%;
+    margin: 0px auto;
+    max-width: 1300px;
+    font-family: 'Contrail One', cursive;
+    color: var(--celesete)
+}
+
+header{
+    background-color: black;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin: 25px auto;
+    border: solid var(--marronClaro);
+    border-radius: 20px;
+    box-shadow: 3px 3px 17px var(--marronClarito);
+    word-spacing: 10px;
+}
+
+h1{
+    font-family: 'Contrail One', cursive;
+    color: var(--celesete);
+    margin: 12px 12px;
+    text-align: center;
+    border-radius: 20px;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+fieldset{
+    border: solid var(--marronClaro);
+    background-color: black;
+    border-radius: 10px;
+    padding: 7px;
+    margin: 15px;
+    box-shadow: 3px 3px 17px var(--marronClarisimo);
+}
+fieldset:focus-within{
+    background-color: var(--deminegro);
+}
+
+fieldset:focus-within form{
+    background-color: var(--marronClarisimo);
+}
+
+.fieldset-h2 > .title2:first-child,
+.formularioGrupo > label:first-child,
+.actividades > .title2:first-child,
+.actividades > .sedesP:first-child{
+    margin-bottom: 10px
+}
+
+form fieldset .sedesP{
+    margin-bottom: 20px;
+}
+
+.genero{
+    margin: 5px 5px 5px 5px;
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+}
+input:focus{
+    background-color: var(--marronClarito);
+    border-radius: 5px;
+    color: var(--marronPastel);
+}
+
+input[
+    type="text"
+],
+input[
+    type="number"
+],
+input[
+    type="email"
+],
+input[type="tel"], select, textarea{
+    display: block;
+    padding: 5px;
+    margin: 10px auto;
+    border-radius: 7px;
+    width: 70%;
+    text-align: right;
+}
+
+textarea{
+    font-family: 'Contrail One', cursive;
+    height: 100px;
+    resize: vertical;
+}
+
+button{
+    color: var(--beige);
+    background-color: black;
+    border: solid var(--marronPastel);
+    border-radius: 10px;
+    font-family: 'Contrail One', cursive;
+    margin: 20px;
+    padding: 10px;
+    box-shadow: 3px 3px 17px var(--marronClarisimo);
+}
+
+.botones{
+    text-align: center;
+}
+
+button:hover{
+    background-color: var(--celesete);
+    color: var(--marronPastel);
+}
+
+.terminos{
+    padding: 5px;
+    margin: 15px;
+}
