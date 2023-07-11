@@ -1,0 +1,187 @@
+@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@200;500;600&family=Roboto:ital,wght@0,500;1,100;1,900&display=swap);
+
+:root{
+    --fondoBlack: rgb(31, 32, 35);
+    --headerGreen: rgb(77, 109, 99);
+    --input:  rgb(166, 193, 185);
+    --white: #ffffff;
+    --placeHolder: #a19f9f;
+    --colorBoton: rgb(43,61,55);
+    --verdeClaro: rgb(214, 226, 222);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--fondoBlack);
+    font-family: 'Poppins', sans-serif;
+}
+
+header{
+    color: var(--white);
+    text-align: center;
+    border-top: 20px solid var();
+    border-bottom: 20px solid var();
+}
+
+main{
+    margin: auto;
+    padding: 1rem;
+    width: 70%;
+    color: var(--white);
+}
+
+h1{
+    padding: 5px;
+    margin: 2rem;
+    border-top: 15px solid var(--headerGreen);
+    border-bottom: 15px solid var(--headerGreen);
+    border-right: 15px solid var(--fondoBlack);
+    border-left: 15px solid var(--fondoBlack);    
+}
+
+.sexoP, .genero{
+    margin: 1rem;
+    text-align: center;
+    word-spacing: 5px;
+}
+
+.title2{
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    font-size: medium;
+    font-weight: 500;
+    position: absolute;
+    top: -15px;
+    left: 15px;
+    background-color: var(--headerGreen);
+    border-radius: 5px;
+    padding: 5px;
+}
+
+span{
+    font-size: 1.3rem;
+}
+
+.formularioGrupo{
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+}
+
+fieldset{
+    border: none;
+    background-color: var(--verdeClaro);
+    border-radius: 3px;
+    margin-bottom: 15px;
+}
+
+.fieldset-h2{
+    position: relative;
+    padding: 25px;
+}
+
+fieldset:focus-within{
+    background-color: var(--input);
+}
+
+fieldset:focus-within form{
+    background-color: var(--placeHolder);
+}
+
+::-webkit-input-placeholder{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    color: var(--placeHolder);
+    text-align: right;
+    padding-right:10px;
+}
+
+.circle{
+    text-align: center;
+    margin: 2rem auto 2rem;
+    border-bottom: var(--headerGreen) 10px dotted;
+    width: 50%;
+    border-top: 3px;
+}
+
+input:focus{
+    background-color: var(--headerGreen);
+    border-radius: 5px;
+    color: var(--white);
+}
+
+input{
+    border-radius: 2px;
+    border: none;
+    font-size: 1rem;
+    padding: 5px;
+    text-align-last: end;
+    color: black;
+}
+
+#nacionalidad{
+    border-radius: 2px;
+    border: none;
+    font-size: 1rem;
+    padding: 5px;
+}
+
+textarea:focus{
+    background-color: var(--headerGreen);
+}
+
+textarea{
+    color: var(--white);
+    height: 100px;
+    resize: vertical;
+    min-height: 110px;
+}
+
+p, label{
+    padding: 5px;
+    text-align: center;
+    font-size: 1rem;
+    color: black;
+}
+
+.terminos{
+    margin: 15px;
+    padding: 5px;
+}
+
+.terminos-2{
+    color: var(--white);
+    text-align: start;
+}
+
+
+.terminos-2 label{
+    color: var(--white);
+}
+
+button{
+    background-color: var(--headerGreen);
+    padding: 8px;
+    margin: 0 15px;
+    border-radius: 5px;
+    font-size: 15px;
+    color: var(--input);
+}
+
+button:hover{
+    background-color: var(--colorBoton);
+}
+
+.botones{
+    text-align: center;
+}
+
+.sedes{
+    text-align: start;
+}
+

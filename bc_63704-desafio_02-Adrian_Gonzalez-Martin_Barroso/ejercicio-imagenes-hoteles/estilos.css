@@ -1,0 +1,44 @@
+.titulo{
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+color: #bb5c9f;
+text-align: center;
+letter-spacing: 15px;
+
+}
+
+.subtitulos {
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+color: #bb5c9f;
+letter-spacing: 20px;
+
+}
+
+header {
+    text-align: center;
+}
+
+.parrafos {
+    color: #4373af;
+}
+
+.imagenpopcentury {
+    float: right;
+    padding: 5px;
+}
+
+.imagencaribbean {
+    float: left;
+    padding: 15px;
+    
+}
+
+.imagenanimal {
+    float: right;
+    padding-left: 15px;
+    padding-bottom: 5px;
+}
+
+.imgmickey {
+
+    width: 100%;
+}
